@@ -42,10 +42,10 @@ elif [ "$LAB" = "work" ]; then
     echo "  【SUBMIT】    完成 pull workgit !"
     sleep 0.1
 elif [ "$LAB" = "origin" ]; then
-    echo "  【SUBMIT】    开始 pull homegit ..."
+    echo "  【SUBMIT】    开始 pull origin ..."
     git pull origin "$BRANCH" --allow-unrelated-histories
     sleep 0.1
-    echo "  【SUBMIT】    完成 pull homegit !"
+    echo "  【SUBMIT】    完成 pull origin !"
     sleep 0.1
 fi
 sleep 0.1
@@ -84,6 +84,12 @@ elif [ "$LAB" = "work" ]; then
     git push workgit "$BRANCH"
     sleep 0.1
     echo "  【SUBMIT】    完成推送到workgit!"
+    sleep 0.1
+elif [ "$LAB" = "origin" ]; then
+    echo "  【SUBMIT】    开始推送到origin..."
+    git push origin "$BRANCH"
+    sleep 0.1
+    echo "  【SUBMIT】    完成推送到origin!"
     sleep 0.1
 fi
 sleep 0.1
