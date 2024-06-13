@@ -3,7 +3,7 @@
 export TZ='Asia/Hong_Kong'
 ACCTIME=$(date +"%Y年%m月%d日 %A %Z %T")
 LAB="origin"
-MESSAGE="提交图床图片"
+MESSAGE="提交图片"
 BRANCH="main"
 GHMDTOCPATH="/Users/zac421/nerozac_arxiv_v2/nokron/8-Toolkits/7-gh-md-toc/gh-md-toc"
 # ------------------------------
